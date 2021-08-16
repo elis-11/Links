@@ -6,8 +6,7 @@ https://github.com/FbW-D01/FbW-D01-Course
 
 ## Exercise #1
 
-https://github.com/FbW-D01/
-Exercise-401-SPA-DOM-Window-Prompt-Guessing-Game
+https://github.com/FbW-D01/Exercise-401-SPA-DOM-Window-Prompt-Guessing-Game
 window.prompt()
 document.getElementById()
 ## Exercise #2
