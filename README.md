@@ -56,3 +56,5 @@ https://github.com/FbW-D01/Exercise-411-SPA-DOM-Event-Carousel
 https://github.com/FbW-D01/Exercise-426-SPA-DOM-Calculator-App
 
 https://gist.github.com/anvaka/8e8fa57c7ee1350e3491   (NPM)
+
+https://onespace.netlify.app/howtos?id=383  (i sass, parcel)
