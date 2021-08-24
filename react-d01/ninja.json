@@ -1,0 +1,23 @@
+{
+    "belts": [
+        {
+            "title": "White",
+            "description": "First Level"
+
+        },
+        {
+            "title": "Green",
+            "description": "Second Level"
+
+        }, 
+        {
+            "title": "Yellow",
+            "description": "Third Level"
+        },
+        {
+            "title": "Blue",
+            "description": " Fourth Level"
+        }
+
+    ]
+}
