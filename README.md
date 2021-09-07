@@ -54,18 +54,26 @@ addEventListener()
 new Date()
 toLocaleDateString()
 
-# https://github.com/FbW-D01/Exercise-408-SPA-DOM-Event-Item-Toggle
+# 
+https://github.com/FbW-D01/Exercise-408-SPA-DOM-Event-Item-Toggle
 
-# https://github.com/FbW-D01/Exercise-409-SPA-DOM-Event-Calculator
+# 
+https://github.com/FbW-D01/Exercise-409-SPA-DOM-Event-Calculator
 
-# https://github.com/FbW-D01/Exercise-410-SPA-DOM-Event-Newsletter-Subscription-Overlay-effect
+# 
+https://github.com/FbW-D01/Exercise-410-SPA-DOM-Event-Newsletter-Subscription-Overlay-effect
 
-# https://github.com/FbW-D01/Exercise-411-SPA-DOM-Event-Carousel
+# 
+https://github.com/FbW-D01/Exercise-411-SPA-DOM-Event-Carousel
 
-# https://github.com/FbW-D01/Exercise-426-SPA-DOM-Calculator-App
+# 
+https://github.com/FbW-D01/Exercise-426-SPA-DOM-Calculator-App
 
-# https://gist.github.com/anvaka/8e8fa57c7ee1350e3491 (NPM)
+# 
+https://gist.github.com/anvaka/8e8fa57c7ee1350e3491 (NPM)
 
-# https://onespace.netlify.app/howtos?id=383 (i sass, parcel)
+# 
+https://onespace.netlify.app/howtos?id=383 (i sass, parcel)
 
-# https://drive.google.com/file/d/14vo1tgg7GsgjYjQTeoMRnTJcWEPW8fLE
+# 
+https://drive.google.com/file/d/14vo1tgg7GsgjYjQTeoMRnTJcWEPW8fLE
