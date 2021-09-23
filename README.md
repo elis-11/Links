@@ -90,4 +90,11 @@ https://drive.google.com/file/d/1LlNuJ8oVjY43j2ng47NXe2nIsgNqQd-e
 #
 https://drive.google.com/file/d/1VckaK0N8gcD6IOXb7B4_3qITV8fWGqpR
 
-#https://raw.githubusercontent.com/Entwickler-Club/dpodreact/dev/api/news.json
+#
+https://raw.githubusercontent.com/Entwickler-Club/dpodreact/dev/api/news.json
+
+#
+https://onespace.netlify.app/api/items_howtos.json
+
+#
+https://onespace.netlify.app/api/
