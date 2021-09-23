@@ -104,3 +104,6 @@ https://raw.githubusercontent.com/graphql-compose/graphql-compose-examples/maste
 
 ## DATA
 https://github.com/graphql-compose/graphql-compose-examples/tree/master/examples/northwind/data/json
+
+# DATA 
+https://newsapi.org/
