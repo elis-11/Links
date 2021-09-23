@@ -97,4 +97,4 @@ https://raw.githubusercontent.com/Entwickler-Club/dpodreact/dev/api/news.json
 https://onespace.netlify.app/api/items_howtos.json
 
 #
-https://onespace.netlify.app/api/
+https://onespace.netlify.app/
