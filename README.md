@@ -78,7 +78,7 @@ https://gist.github.com/anvaka/8e8fa57c7ee1350e3491 (NPM)
 # 
 https://onespace.netlify.app/howtos?id=383 (i sass, parcel)
 
-# minimilize + netlify + git repo
+## minimilize + netlify + git repo
 https://drive.google.com/file/d/14vo1tgg7GsgjYjQTeoMRnTJcWEPW8fLE
 
 #
