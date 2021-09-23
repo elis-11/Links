@@ -4,6 +4,9 @@
 
 https://github.com/FbW-D01/FbW-D01-Course
 
+#  HOWTOS-EDWARD
+https://onespace.netlify.app/
+
 ## Exercise #1
 
 https://github.com/FbW-D01/Exercise-401-SPA-DOM-Window-Prompt-Guessing-Game
@@ -96,5 +99,3 @@ https://raw.githubusercontent.com/Entwickler-Club/dpodreact/dev/api/news.json
 #
 https://onespace.netlify.app/api/items_howtos.json
 
-#
-https://onespace.netlify.app/
