@@ -77,3 +77,12 @@ https://onespace.netlify.app/howtos?id=383 (i sass, parcel)
 
 # minimilize + netlify + git repo
 https://drive.google.com/file/d/14vo1tgg7GsgjYjQTeoMRnTJcWEPW8fLE
+
+#
+https://drive.google.com/file/d/1Uc9mXJeqE62Nk9Dgie-6YeCryb4ugImK
+
+#
+https://drive.google.com/file/d/1-oWTnRsv8IIWh1QxyH2e68ibNvuhUJae
+
+#
+https://drive.google.com/file/d/1LlNuJ8oVjY43j2ng47NXe2nIsgNqQd-e
