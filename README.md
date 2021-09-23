@@ -99,6 +99,8 @@ https://raw.githubusercontent.com/Entwickler-Club/dpodreact/dev/api/news.json
 #
 https://onespace.netlify.app/api/items_howtos.json
 
-## Exercise #
+## DATA
 https://raw.githubusercontent.com/graphql-compose/graphql-compose-examples/master/examples/northwind/data/json/products.json
 
+## DATA
+https://github.com/graphql-compose/graphql-compose-examples/tree/master/examples/northwind/data/json
