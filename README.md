@@ -4,14 +4,14 @@
 
 https://drive.google.com/file/d/1OWjZQIDxmNcw7QAekRnKWVPAaKYW5kSA
 
-# reactRouter-Gael
+# Gael-reactRouter
 https://drive.google.com/file/d/16IFxFo_qxlk_7SZpkafP7C4JnlqKcZzA
 
 
-# flashcards
+# Flashcards
 https://drive.google.com/file/d/10WKUOjjH2tqpdiDLm84BLwUDayaHvF9i
 
-# minimize- react
+# minimize-netlify react
 https://drive.google.com/file/d/14vo1tgg7GsgjYjQTeoMRnTJcWEPW8fLE
 
 
@@ -92,9 +92,6 @@ https://gist.github.com/anvaka/8e8fa57c7ee1350e3491 (NPM)
 
 # 
 https://onespace.netlify.app/howtos?id=383 (i sass, parcel)
-
-## minimilize + netlify + git repo
-https://drive.google.com/file/d/14vo1tgg7GsgjYjQTeoMRnTJcWEPW8fLE
 
 #
 https://drive.google.com/file/d/1Uc9mXJeqE62Nk9Dgie-6YeCryb4ugImK
