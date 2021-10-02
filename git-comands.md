@@ -43,4 +43,5 @@ $ which -software name- which ist ein Befehl zum Auffinden der ausführbaren Dat
 $ sudo apt remove -software name- "Apt remove" entfernt nur die Binärdateien eines Pakets. Es hinterlässt Restkonfigurationsdateien. Wenn Sie "apt remove" verwendet haben, um eine bestimmte Software zu entfernen und anschließend erneut zu installieren, enthält Ihre Software dieselben Konfigurationsdateien.
 $ sudo apt autoremove Wenn Sie ein Paket installieren, werden häufig zusätzliche Pakete installiert, bei denen es sich um die Abhängigkeiten handelt. Wenn Sie dieses Paket jetzt deinstallieren, bleiben die Abhängigkeiten im System erhalten. apt autoremove entfernt diese Abhängigkeiten, aber nur diejenigen, die von anderen installierten Paketen nicht benötigt werden.
 Markdown
+new comds
 
