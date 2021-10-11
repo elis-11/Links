@@ -22,6 +22,10 @@ https://github.com/FbW-D01/FbW-D01-Course
 #  HOWTOS-EDWARD
 https://onespace.netlify.app/
 
+# Fontawesome for free
+
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css
+
 ## Exercise #1
 
 https://github.com/FbW-D01/Exercise-401-SPA-DOM-Window-Prompt-Guessing-Game
