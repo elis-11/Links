@@ -117,3 +117,9 @@ https://github.com/graphql-compose/graphql-compose-examples/tree/master/examples
 
 # News-API
 https://newsapi.org/
+
+# ScreenToGif
+https://www.screentogif.com/
+
+# Weather-API
+https://www.weatherapi.com/
