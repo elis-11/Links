@@ -14,26 +14,21 @@ https://drive.google.com/file/d/10WKUOjjH2tqpdiDLm84BLwUDayaHvF9i
 # minimize-netlify react
 https://drive.google.com/file/d/14vo1tgg7GsgjYjQTeoMRnTJcWEPW8fLE
 
-
 ## Link to FbW-D01-Course
-
 https://github.com/FbW-D01/FbW-D01-Course
 
 #  HOWTOS-EDWARD
 https://onespace.netlify.app/
 
 # Fontawesome for free
-
 https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css
 
 ## Exercise #2
-
 https://github.com/FbW-D01/Exercise-402-SPA-DOM-Query-Html-And-Style
 querySelector()
 querySelectorAll()
 
 ## Exercise #3
-
 https://github.com/FbW-D01/Exercise-403-SPA-DOM-Create-Book-Site-With-Elements
 classList
 createElement()
@@ -41,7 +36,6 @@ appendChild()
 textContent()
 
 ## Exercise #4
-
 https://github.com/FbW-D01/Exercise-404-SPA-DOM-Traversing-Html-With-JavaScript
 closest()
 previousElementSibling()
@@ -49,7 +43,6 @@ children
 innerText
 
 ## Exercise #5
-
 https://github.com/FbW-D01/Exercise-405-SPA-DOM-Traversing-Parents-List
 nodeName
 parentElement
@@ -57,50 +50,48 @@ unshift()
 Array.from()
 
 ## Exercise #6
-
 https://github.com/FbW-D01/Exercise-406-SPA-DOM-Traversing-Html-Childen
 children
 childElementCount
 classList
 
 ## Exercise #7
-
 https://github.com/FbW-D01/Exercise-407-SPA-DOM-Event-Weekend-Countdown
 addEventListener()
 new Date()
 toLocaleDateString()
 
-# 
+## 
 https://github.com/FbW-D01/Exercise-408-SPA-DOM-Event-Item-Toggle
 
-# 
+## 
 https://github.com/FbW-D01/Exercise-409-SPA-DOM-Event-Calculator
 
-# 
+## 
 https://github.com/FbW-D01/Exercise-410-SPA-DOM-Event-Newsletter-Subscription-Overlay-effect
 
-# 
+## 
 https://github.com/FbW-D01/Exercise-411-SPA-DOM-Event-Carousel
 
-# 
+## 
 https://github.com/FbW-D01/Exercise-426-SPA-DOM-Calculator-App
 
-# 
+## 
 https://gist.github.com/anvaka/8e8fa57c7ee1350e3491 (NPM)
 
-# 
+## 
 https://onespace.netlify.app/howtos?id=383 (i sass, parcel)
 
-#
+##
 https://drive.google.com/file/d/1Uc9mXJeqE62Nk9Dgie-6YeCryb4ugImK
 
-#
+##
 https://drive.google.com/file/d/1-oWTnRsv8IIWh1QxyH2e68ibNvuhUJae
 
-#
+##
 https://drive.google.com/file/d/1LlNuJ8oVjY43j2ng47NXe2nIsgNqQd-e
 
-#
+##
 https://drive.google.com/file/d/1VckaK0N8gcD6IOXb7B4_3qITV8fWGqpR
 
 ## DATA
@@ -115,14 +106,14 @@ https://raw.githubusercontent.com/graphql-compose/graphql-compose-examples/maste
 ## DATA
 https://github.com/graphql-compose/graphql-compose-examples/tree/master/examples/northwind/data/json
 
-# News-API
+## News-API
 https://newsapi.org/
 
-# ScreenToGif
+## ScreenToGif
 https://www.screentogif.com/
 
-# Weather-API
+## Weather-API
 https://www.weatherapi.com/
 
-# Website with Node Create-Server
+## Website with Node Create-Server
 https://drive.google.com/file/d/14m3Nt9gCqiyMvaH9gQo4Luf0uBoZBKv8
