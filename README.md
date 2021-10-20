@@ -119,3 +119,6 @@ https://www.weatherapi.com/
 https://drive.google.com/file/d/14m3Nt9gCqiyMvaH9gQo4Luf0uBoZBKv8
 ## Howto Create it
 https://onespace.netlify.app/howtos?id=414
+
+## Node Express EJS
+https://drive.google.com/file/d/1mkcCOXS5lHnbDXgu3JZHYxUlTw_u0dxj
