@@ -9,7 +9,7 @@
   <body>
     <h1>hi</h1>
     <script>
-      // FUNCTION-EXPRESSION
+      //  1--FUNCTION-EXPRESSION
       const greet2 = function (name) {
         console.log("Hello2 -", name);
       };
@@ -26,7 +26,7 @@
       console.dir(greet);
       //   console.clear();
 
-      //ANONIME FUNCTIONS
+      //  2--ANONIME FUNCTIONS
       //   let counter = 0;
       //   setInterval(function () {
       //     console.log(++counter);
@@ -34,12 +34,32 @@
 
       let counter = 0;
       const interval = setInterval(function () {
-        if (counter === 5) {
+        if (counter === 2) {
           clearInterval(interval);
         } else {
-        console.log(++counter);
+          console.log(++counter);
         }
       }, 1000);
+
+      //   3--ARRAY--FUNCTIONS
+      function rock(name) {
+        console.log("Hello -", name);
+      }
+
+      //         ||  gleich
+
+      const arrow = (name) => {
+        console.log("Hello -", name);
+      };
+      arrow("Julja");
+      //       || gleich
+      const string = (num) => num ** 2;
+      console.log(string(8));
+
+      const poly = (name) => console.log("hi", name);
+      poly("Lili");
+
+      
     </script>
   </body>
 </html>
