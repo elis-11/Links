@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <script>
+         const name = "Liss";
+      console.log(name);
+      console.log(name.length);
+      
+      const names = new Array("alina", "bert", "conni");
+      console.log(names);
+
+      const cars = ["BMW", "MERS","VW","Fiat"];
+      console.log(cars);
+      console.log(cars.length);
+      console.log(cars[1]);
+      cars[0] = "Porshe";
+      cars[1] = "Lada";
+      cars[3] = "UAS";
+      console.log(cars);
+      cars[cars.length] = "Mazda";
+      console.log(cars);
+
+
+      for (let i = 0; i < cars.length; i++) {
+        const car =cars[i]
+        console.log(car);
+        // console.log(i);
+      }
+//          || oder
+
+      for (let car of cars) {
+        console.log(car);
+      }
+    </script>
+</body>
+</html>
