@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>hi</h1>
     <script>
-        // FUNCTION-EXPRESSION
-        const greet2 = function(name){
-            console.log('Hello2 -', name);
+      // FUNCTION-EXPRESSION
+      const greet2 = function (name) {
+        console.log("Hello2 -", name);
+      };
+      const greet3 = function greet2(name) {
+        console.log("Hello3 -", name);
+      };
+      greet("Liss");
+      greet2("Liss");
+      greet3("Liss");
+      // FUNCTION-DECLARATION
+      function greet(name) {
+        console.log("Hello -", name);
+      }
+      console.dir(greet);
+      //   console.clear();
+
+      //ANONIME FUNCTIONS
+      //   let counter = 0;
+      //   setInterval(function () {
+      //     console.log(++counter);
+      //   }, 2000);
+
+      let counter = 0;
+      const interval = setInterval(function () {
+        if (counter === 5) {
+          clearInterval(interval);
+        } else {
+        console.log(++counter);
         }
-        const greet3 = function greet2(name){
-            console.log('Hello3 -', name);
-        }
-        greet('Liss')
-        greet2('Liss')
-        greet3('Liss')
-        // FUNCTION-DECLARATION
-        function greet(name){
-            console.log('Hello -', name);
-        }
-        console.dir(greet)
-        console.clear()
-
-        //ANONIME FUNCTIONS
-        setInterval(function(){
-
-        }, 1000)
-
-
+      }, 1000);
     </script>
-</body>
+  </body>
 </html>
