@@ -28,27 +28,45 @@
       console.log(cars);
       console.log(cars.reverse());
       console.log(cars);
-// console.log(cars.indexOf('FORD'));
+      // console.log(cars.indexOf('FORD'));
 
-const index=cars.indexOf('HW');
-cars[index]='Porshe'
-console.log(cars);
-
+      // const index=cars.indexOf('HW');
+      // cars[index]='Porshe'
+      // console.log(cars);
 
       // task 1
       const text = "Hello, we are learning JS!";
       console.log(text);
-    //   const reverseText = text.split(",");
-    //   console.log(reverseText);
-    //   const reverseText = text.split("");
-    //   console.log(reverseText);
-    //   const reverseText = text.split("").reverse();
-    //   console.log(reverseText);
+      //   const reverseText = text.split(",");
+      //   console.log(reverseText);
+      //   const reverseText = text.split("");
+      //   console.log(reverseText);
+      //   const reverseText = text.split("").reverse();
+      //   console.log(reverseText);
       const reverseText = text.split("").reverse().join();
-    //   const reverseText = text.split("").reverse().join('');
-    //   const reverseText = text.split("").reverse().join(' ');
+      //   const reverseText = text.split("").reverse().join('');
+      //   const reverseText = text.split("").reverse().join(' ');
       console.log(reverseText);
 
+      //  OBJECTS
+      const people = [
+        { name: "John", budget: 4200 },
+        { name: "Vika", budget: 6000 },
+        { name: "Leon", budget: 8000 }
+      ];
+    //   const index = people.findIndex(function (person) {
+    //     console.log(person);
+    //     return person.budget === 8000;
+    //   });
+    //   console.log(index);
+    //   console.log(people[index]);
+    //  oder  ||
+      const person = people.find(function (person) {
+        console.log(people);
+        console.log(person);
+        return person.budget === 4200;
+      });
+      console.log(person);
     </script>
   </body>
 </html>
