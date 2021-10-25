@@ -52,14 +52,21 @@
         console.log("Hello -", name);
       };
       arrow("Julja");
+      const arrow2 = () => {
+        console.log("Hello -");
+      };
+      arrow2("Julja");
       //       || gleich
-      const string = (num) => num ** 2;
+      const string = num => num ** 2;
       console.log(string(8));
 
-      const poly = (name) => console.log("hi", name);
+      const poly = name => console.log("hi", name);
       poly("Lili");
 
-      
+      const pol = (name, age) => console.log("hi", name, age);
+      pol("Lili", 28);
+
+
     </script>
   </body>
 </html>
