@@ -83,7 +83,18 @@
       console.log(sum3(2, 3));
       console.clear()
 
-    
+      // sumAll(1, 2, 3, 4, 5);
+      // function sumAll(...all) {
+      //   console.log(all);
+      // }
+      const res = sumAll(1, 2, 3, 4, 5);
+      function sumAll(...all) {
+        let result = 0;
+        for (let num of all) {
+          result += num;
+        }
+        return result;
+      }
       console.log(res);
     </script>
   </body>
