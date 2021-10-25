@@ -28,11 +28,27 @@
       console.log(cars);
       console.log(cars.reverse());
       console.log(cars);
+// console.log(cars.indexOf('FORD'));
+
+const index=cars.indexOf('HW');
+cars[index]='Porshe'
+console.log(cars);
+
+
       // task 1
       const text = "Hello, we are learning JS!";
       console.log(text);
-      const reverseText = text.split(",");
+    //   const reverseText = text.split(",");
+    //   console.log(reverseText);
+    //   const reverseText = text.split("");
+    //   console.log(reverseText);
+    //   const reverseText = text.split("").reverse();
+    //   console.log(reverseText);
+      const reverseText = text.split("").reverse().join();
+    //   const reverseText = text.split("").reverse().join('');
+    //   const reverseText = text.split("").reverse().join(' ');
       console.log(reverseText);
+
     </script>
   </body>
 </html>
