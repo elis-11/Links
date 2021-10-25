@@ -57,16 +57,34 @@
       };
       arrow2("Julja");
       //       || gleich
-      const string = num => num ** 2;
+      const string = (num) => num ** 2;
       console.log(string(8));
 
-      const poly = name => console.log("hi", name);
+      const poly = (name) => console.log("hi", name);
       poly("Lili");
 
       const pol = (name, age) => console.log("hi", name, age);
       pol("Lili", 28);
 
+      //       --DEFAULT--FUNCTIONS
+      const sum = (a, b) => a + b;
+      console.log(sum(28, 3));
 
+      const sum1 = (c, d = 2) => c + d;
+      console.log(sum1(14));
+      console.log(sum1(14, 3));
+
+      const sum2 = (g = 7, k = 1) => g + k;
+      console.log(sum2());
+      console.log(sum2(15, 4));
+
+      const sum3 = (n = 6, m = n * 3) => n + m;
+      console.log(sum3());
+      console.log(sum3(2, 3));
+      console.clear()
+
+    
+      console.log(res);
     </script>
   </body>
 </html>
