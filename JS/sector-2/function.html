@@ -66,7 +66,7 @@
       const pol = (name, age) => console.log("hi", name, age);
       pol("Lili", 28);
 
-      //       --DEFAULT--FUNCTIONS
+      //       4--DEFAULT--FUNCTIONS
       const sum = (a, b) => a + b;
       console.log(sum(28, 3));
 
@@ -87,7 +87,7 @@
       // function sumAll(...all) {
       //   console.log(all);
       // }
-      const res = sumAll(1, 2, 3, 4, 5);
+      // const res = sumAll(1, 2, 3, 4, 5, 7 ,9);
       function sumAll(...all) {
         let result = 0;
         for (let num of all) {
@@ -95,7 +95,20 @@
         }
         return result;
       }
+      const res = sumAll(1, 2, 3, 4, 5, 7 ,9);
       console.log(res);
-    </script>
+      console.clear();
+//        5--CLOSURES
+function createMember(name){
+  return function(lastName){
+    console.log(name + lastName);
+  }
+}
+const logWithLastName = createMember('Elisa')
+console.log(logWithLastName('Arsa'));
+console.log(logWithLastName('Ricci'));
+
+
+      </script>
   </body>
 </html>
