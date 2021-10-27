@@ -9,7 +9,6 @@ const port = 5000;
 //  ODER
 // app.get("/", (req, res)=> res.send("OKEY"))
 //  ODER
-
 app.get("/", (req, res) => {
   res.send({ status: 200, message: "HI" });
   res.end();
