@@ -64,6 +64,8 @@
 
       //  oder  ||
       //   const person = people.find(function (person) {
+      //     return person.budget === 4200;
+      //   })
 
       // oder ||
       //  const person = people.find((person)=> {
@@ -92,11 +94,44 @@
         { name: "Keks", age: 3, width: 300, height: 300 },
         { name: "Reks", age: 6, width: 900, height: 300 },
       ];
-const pes=sobaki.find(function (pes){
-  return pes.width===900
-})
-console.log(pes);
+      const pes = sobaki.find(function (pes) {
+        return pes.width === 900;
+      });
+      console.log(pes);
 
-</script>
+      // ANONIME FUNCTION--3
+      const cats = [
+        { name: "Sil", age: 2, color: "black" },
+        { name: "Keks", age: 3, color: "grey" },
+        { name: "Puch", age: 6, color: "wait" },
+      ];
+      //  VERSION --3-1
+      // const cat = cats.find(function (cat) {
+      //   return cat.name === "Puch";
+      // });
+
+      //  VERSION --3-2
+      const cat = cats.find((cat) => {
+        return cat.name === "Sil";
+      });
+
+      //  VERSION --3-3
+      // const cat=cats.find((cat) => cat.name === "Puch");
+      console.log(cat);
+      
+      //  VERSION--4
+      const pens = [
+        { name: "Col", color: "black" },
+        { name: "Mok", color: "green" },
+      ];
+      //  VERSION--4-1
+      let findedPen;
+      for (const pen of pens) {
+        if (pen.color === "green") {
+          findedPen = pen;
+        }
+      }
+      console.log(findedPen);
+    </script>
   </body>
 </html>
