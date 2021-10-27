@@ -81,7 +81,7 @@
       const sum3 = (n = 6, m = n * 3) => n + m;
       console.log(sum3());
       console.log(sum3(2, 3));
-      console.clear()
+      console.clear();
 
       // sumAll(1, 2, 3, 4, 5);
       // function sumAll(...all) {
@@ -95,20 +95,52 @@
         }
         return result;
       }
-      const res = sumAll(1, 2, 3, 4, 5, 7 ,9);
+      const res = sumAll(1, 2, 3, 4, 5, 7, 9);
       console.log(res);
       console.clear();
-//        5--CLOSURES
-function createMember(name){
-  return function(lastName){
-    console.log(name + lastName);
-  }
-}
-const logWithLastName = createMember('Elisa')
-console.log(logWithLastName('Arsa'));
-console.log(logWithLastName('Ricci'));
+      //        5--CLOSURES
+      function createMember(name) {
+        return function (lastName) {
+          console.log(name + lastName);
+        };
+      }
+      const logWithLastName = createMember("Elisa");
+      console.log(logWithLastName("Arsa"));
+      console.log(logWithLastName("Ricci"));
 
+      // ANONIME FUNCTION--3
+      const cats = [
+        { name: "Sil", age: 2, color: "black" },
+        { name: "Keks", age: 3, color: "grey" },
+        { name: "Puch", age: 6, color: "wait" },
+      ];
+      //  VERSION --3-1
+      // const cat = cats.find(function (cat) {
+      //   return cat.name === "Puch";
+      // });
 
-      </script>
+      //  VERSION --3-2
+      // const cat = cats.find((cat) => {
+      //   return cat.name === "Sil";
+      // });
+
+      //  VERSION --3-3
+      const cat = cats.find((cat) => cat.name === "Puch");
+      console.log(cat);
+
+      //  VERSION--4
+      const pens = [
+        { name: "Col", color: "black" },
+        { name: "Mok", color: "green" },
+      ];
+      //  VERSION--4-1
+      let findedPen;
+      for (const pen of pens) {
+        if (pen.color === "green") {
+          findedPen = pen;
+        }
+      }
+      console.log(findedPen);
+    </script>
   </body>
 </html>
