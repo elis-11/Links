@@ -10,13 +10,33 @@
     <h1>hello</h1>
     <script>
       const cars = ["BMW", "Hw", "Ford", "Reno"];
-      const fib = [1, 1, 2, 3, 4, 5, 13];
 
       console.log(cars.includes("mers"));
       console.log(cars.includes("HW"));
 
-const upperCaseCars=cars.map(car=>car.toUpperCase());
-console.log(upperCaseCars);
+      const upperCaseCars = cars.map((car) => car.toUpperCase());
+      console.log(upperCaseCars);
+
+      // MAP
+      const fib = [1, 2, 3, 4, 5, 11, 13];
+      // const pow2fib= fib.map(num=>num**2)
+      //----------------------------------------------------------------
+      // const pow2 = (num) => num ** 2;
+      // const pow2fib = fib.map(pow2);
+      //----------------------------------------------------------------
+      // const pow2 = (num) => num ** 2;
+      // const sqrt=num=>Math.sqrt(num)
+      // const pow2fib = fib.map(pow2).map(sqrt);
+
+      // const pow2fib = fib.map(pow2).map(Math.sqrt);
+
+      const pow2 = (num) => num ** 2;
+      const pow2fib = fib.map(pow2);
+      const filteredNunbers = pow2fib.filter((num) => {
+        return num > 4;
+      });
+      console.log(pow2fib);
+      console.log(filteredNunbers);
 
       // FUNCTION
       // function addItemToEnd {
@@ -83,10 +103,6 @@ console.log(upperCaseCars);
       //   oder ||
       const person = people.find((person) => person.budget === 4200);
       console.log(person);
-
-     
-
-      
     </script>
   </body>
 </html>
