@@ -77,61 +77,9 @@
       const person = people.find((person) => person.budget === 4200);
       console.log(person);
 
-      //  ARRAY
-      const peoples = [
-        { name: "Johns", budget: 1420 },
-        { name: "Vikas", budget: 1600 },
-        { name: "Leons1", budget: 1800 },
-      ];
-      const persons = peoples.find(function (persons) {
-        return persons.budget === 1600;
-      });
-      console.log(persons);
-      //  VERSION -2
+     
 
-      const sobaki = [
-        { name: "Sarik", age: 2, width: 800, height: 300 },
-        { name: "Keks", age: 3, width: 300, height: 300 },
-        { name: "Reks", age: 6, width: 900, height: 300 },
-      ];
-      const pes = sobaki.find(function (pes) {
-        return pes.width === 900;
-      });
-      console.log(pes);
-
-      // ANONIME FUNCTION--3
-      const cats = [
-        { name: "Sil", age: 2, color: "black" },
-        { name: "Keks", age: 3, color: "grey" },
-        { name: "Puch", age: 6, color: "wait" },
-      ];
-      //  VERSION --3-1
-      // const cat = cats.find(function (cat) {
-      //   return cat.name === "Puch";
-      // });
-
-      //  VERSION --3-2
-      // const cat = cats.find((cat) => {
-      //   return cat.name === "Sil";
-      // });
-
-      //  VERSION --3-3
-      const cat = cats.find((cat) => cat.name === "Puch");
-      console.log(cat);
-
-      //  VERSION--4
-      const pens = [
-        { name: "Col", color: "black" },
-        { name: "Mok", color: "green" },
-      ];
-      //  VERSION--4-1
-      let findedPen;
-      for (const pen of pens) {
-        if (pen.color === "green") {
-          findedPen = pen;
-        }
-      }
-      console.log(findedPen);
+      
     </script>
   </body>
 </html>
