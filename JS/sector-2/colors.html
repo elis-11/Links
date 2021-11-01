@@ -40,6 +40,24 @@
       const filteredMas = inStep.filter((num) => num > 30);
       console.log(inStep);
       console.log(filteredMas);
+
+      const people=[
+          {name:'Lena', age:28, budget: 3770 },
+          {name:'Juriy', age:28, budget:6534},
+          {name:'Lukas', age: 37, budget:6453}
+      ]
+    //   const allBudget = people.reduce( (acc, person)=> {
+    //     acc += person.budget
+    //     return acc
+    //   }, 0)
+    //   console.log(allBudget);
+      const allBudget = people
+      .filter(person=>person.budget>5000)
+      .reduce( (acc, person)=> {
+        acc += person.budget
+        return acc
+      }, 0)
+      console.log(allBudget);
     </script>
   </body>
 </html>
