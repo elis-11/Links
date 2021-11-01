@@ -130,3 +130,6 @@ https://github.com/public-apis/public-apis
 
 ## From Fetch call to API to local state update in React - Examples für CREATE, UPDATE, DELETE
 https://github.com/losrobbos/api-connect-guide#using-fetch
+
+## Starter Code - React useState with objects demo:
+https://github.com/losrobbos/use-state-objects-demo
