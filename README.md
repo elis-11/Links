@@ -127,3 +127,6 @@ https://onespace.netlify.app/howtos?id=415
 
 ## Github-Apis---
 https://github.com/public-apis/public-apis
+
+## From Fetch call to API to local state update in React - Examples für CREATE, UPDATE, DELETE
+https://github.com/losrobbos/api-connect-guide#using-fetch
