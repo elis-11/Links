@@ -124,3 +124,6 @@ https://onespace.netlify.app/howtos?id=414
 https://drive.google.com/file/d/1mkcCOXS5lHnbDXgu3JZHYxUlTw_u0dxj
 ## Howto
 https://onespace.netlify.app/howtos?id=415
+
+## Github-Apis---
+https://github.com/public-apis/public-apis
