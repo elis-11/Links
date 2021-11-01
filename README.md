@@ -139,3 +139,6 @@ https://docs.pmnd.rs/react-three-fiber/getting-started/examples#showcase
 
 ## Demo Repo
 https://github.com/losrobbos/sales-demo
+
+## GIT Aliases für weniger PAIN beim Tippen:
+GIT Aliases für weniger PAIN beim Tippen:
