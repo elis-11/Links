@@ -30,9 +30,9 @@
       const oneGech = gech.map(insGech).map(sqrt);
       console.log(oneGech);
 
-        const insGech1 = (num) => num ** 5;
-        const oneGech1 = gech.map(insGech1).map(Math.sqrt);
-        console.log(oneGech1);
+      const insGech1 = (num) => num ** 5;
+      const oneGech1 = gech.map(insGech1).map(Math.sqrt);
+      console.log(oneGech1);
 
       const mas = [4, 5, 6, 7, 8, 9];
       const step2 = (num) => num ** 2;
@@ -41,23 +41,37 @@
       console.log(inStep);
       console.log(filteredMas);
 
-      const people=[
-          {name:'Lena', age:28, budget: 3770 },
-          {name:'Juriy', age:28, budget:6534},
-          {name:'Lukas', age: 37, budget:6453}
-      ]
-    //   const allBudget = people.reduce( (acc, person)=> {
-    //     acc += person.budget
-    //     return acc
-    //   }, 0)
-    //   console.log(allBudget);
-      const allBudget = people
-      .filter(person=>person.budget>5000)
-      .reduce( (acc, person)=> {
-        acc += person.budget
-        return acc
-      }, 0)
+      const people = [
+        { name: "Lena", age: 28, budget: 3770 },
+        { name: "Juriy", age: 28, budget: 6534 },
+        { name: "Lukas", age: 41, budget: 7453 },
+        { name: "Mukas", age: 37, budget: 2453 },
+        { name: "Frukas", age: 24, budget: 6453 },
+      ];
+        // people.reduce(function () {}, 0)
+
+      const allBudget = people.reduce((acc, person) => {
+        acc += person.budget;
+        return acc;
+      }, 0);
       console.log(allBudget);
+
+      const someBudget = people
+        .filter((person) => person.budget > 5000)
+        .reduce((acc, person) => {
+          acc += person.budget;
+          return acc;
+        }, 0);
+      console.log(someBudget);
+
+        const minBudget = people
+        .filter((person) => person.budget<7000)
+        .reduce((acc, person) => {
+            acc += person.budget
+            return acc;
+        }, 0);
+        console.log(minBudget);
+
     </script>
   </body>
 </html>
