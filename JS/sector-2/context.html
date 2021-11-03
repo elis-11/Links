@@ -64,6 +64,16 @@
       };
       const bound1 = next.keys.bind(person);
       bound1();
-    </script>
+
+      const next1 = {
+        keys() {
+          console.log("Object Keys: ", Object.keys(this));
+        },
+      };
+next1.keys.call(person)
+
+
+
+      </script>
   </body>
 </html>
