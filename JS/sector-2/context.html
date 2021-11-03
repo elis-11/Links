@@ -70,9 +70,55 @@
           console.log("Object Keys: ", Object.keys(this));
         },
       };
-next1.keys.call(person)
+      next1.keys.call(person)
+      console.clear();
 
+      const next12 = {
+        keys() {
+          console.log("Object Keys: ", Object.keys(this));
+        },
+        keysAndValues() {
+          Object.keys(this).forEach(key =>{
+            console.log(`"${key}": ${this[key]}`);
+          })
+        }
+      };
+      next12.keysAndValues.call(next12)
+      next12.keysAndValues.call({a:1, b:{c:2}})
+      next12.keysAndValues.call({a:1, c:2})
+      next12.keysAndValues.call(person)
 
+      
+      const next6 = {
+        keys() {
+          console.log("Object Keys: ", Object.keys(this));
+        },
+        keyAndValue() {
+          Object.keys(this).forEach(key =>{
+            console.log(`"${key}": ${this[key]}`);
+          })
+          // Object.keys(this).forEach(function(key){
+          //   console.log(`"${key}": ${this[key]}`);
+          // }bind(this))
+        },
+      withParameters(top=false, center=false, bottom=false){
+        if (top){
+          console.log('-----Start-----');
+        }
+        Object.keys(this).forEach((key, index, array) =>{
+            console.log(`"${key}": ${this[key]}`);
+            // if (center){
+            if (center && index!== array.length-1){
+              console.log('-----Senter-----');
+            }
+          })
+        if (bottom){
+          console.log('-----End-----');
+        }
+      }
+    };
+    next6.withParameters.call(person, true,true,true);
+    next6.withParameters.apply(person, [true,true,true]);
 
       </script>
   </body>
