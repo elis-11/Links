@@ -166,18 +166,21 @@
       });
       console.log(pes);
 
-      const beauty= ['Linda', 'Leon', 'Lars', 'Leons', 'Mikki']
-      const upperCase= beauty.map(beaut=>beaut.toUpperCase())
+      const beauty = ["Linda", "Leon", "Lars", "Leons", "Mikki"];
+      const upperCase = beauty.map((beaut) => beaut.toUpperCase());
       console.log(upperCase);
-      const lowerCase=beauty.map(beaut=>beaut.toLowerCase())
+      const lowerCase = beauty.map((beaut) => beaut.toLowerCase());
       console.log(lowerCase);
 
-      const chisla=[3, 5, 6, 7, 8, 9]
-      const ptwos=chisla.map(chislo=>chislo ** 2)
+      const chisla = [3, 5, 6, 7, 8, 9];
+      const ptwos = chisla.map((chislo) => chislo ** 2);
       console.log(ptwos);
-      const squ=chisla.map(chislo=>chislo **6).map(Math.sqrt)
+      const squ = chisla.map((chislo) => chislo ** 6).map(Math.sqrt);
       console.log(squ);
 
+      const drins = [7, 9, 10, 11, 12, 13, 14, 15];
+      const filtern = drins.filter((d) => d > 8);
+      console.log(filtern);
     </script>
   </body>
 </html>
