@@ -28,19 +28,25 @@
       console.log(person);
       person.greet();
 
-      person.age++
-      person.languages.push('fr')
+      person.age++;
+      person.languages.push("fr");
       console.log(person);
-      person['key_4']=undefined
-      console.clear();
+      person["key_4"] = undefined;
       console.log(person);
-      console.log(person['key_4']);
-      delete person['key_4']
+      console.log(person["key_4"]);
+      delete person["key_4"];
       console.log(person);
 
-      const {name, age: personAge=10, languages}=person
+      const { name, age: personAge = 10, languages } = person;
       console.log(name, personAge, languages);
+      console.clear();
 
+      console.log(person);
+
+      Object.keys(person).forEach((key) => {
+        console.log("key:", key);
+        console.log("value:", person[key]);
+      });
     </script>
   </body>
 </html>
