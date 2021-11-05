@@ -9,8 +9,8 @@
 
 ## -----adding-ssh-key-to-github----
 ## $ ssh -T git@github.com
-## $ git config --global user.email eliza.arzanukaeva@gmail.com
-## $ git config --global user.name # “elis-11”
+## $ git config --global user.email "your-email" 
+## $ git config --global user.name “some-name”
 ## $ git add .
 ## $ git commit -m “update”
 ## $ git push
