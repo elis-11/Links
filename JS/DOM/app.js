@@ -14,7 +14,7 @@ setTimeout(() => {
 
 function addStylesTo(node) {
     node.textContent='Changed from JS!'
-    node.style.color='red'
+    node.style.color='green'
     node.style.textAlign='center'
     node.style.backgroundColor='grey'
     node.style.padding='5rem'
