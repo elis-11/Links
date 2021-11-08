@@ -1,0 +1,108 @@
+1 of 410 Howtos
+OCT 31MongoDB
+How to install MongoDB on Windows and Ubuntu
+Windows machine that has MongoDB 4.4.3 installed
+download MongoDB
+https://www.mongodb.com/try/download/community
+download MongoDB Community Server
+takes about 1 minute to download
+2021-01-15: mongodb-windows-x86_64-4.4.3-signed.msi
+2021-10-31: mongodb-windows-x86_64-5.0.3-signed.msi
+install
+2021-01-15
+installing here: C:\Program Files\MongoDB\Server\4.4\data\
+2021-10-31
+installing here: C:\Program Files\MongoDB\Server\5.0\data\
+Mongo Compass opened
+seemed to work, I can access databases I had created in 4.4.3
+when I run Mongo at CMD: mongo
+the shell seems to be 4.4.3 but the server 5.0
+
+went to: https://www.mongodb.com/try/download/shell
+says I can download 1.1.1
+downloaded and instaleld 1.1.1
+mongo
+mongo shell is still 4.4.3
+found a 5.03 shell download here: https://www.mongodb.com/download-center/enterprise/releases
+file is: mongodb-windows-x86_64-enterprise-5.0.3-signed.msi
+got a conflict:
+
+we don't need this
+we want to repoint the environment path to 5.0.3 instead of 4.4.3
+found in environment path system variables: C:\Program Files\MongoDB\Server\4.4\bin
+under C:\Program Files\MongoDB\Server we have 4.2, 4.4, 5.0
+changed to: C:\Program Files\MongoDB\Server\5.0\bin
+and fixed mongorc.js problem
+Windows virtual machine without Mongo installed yet
+downloaded and installing: mongodb-windows-x86_64-5.0.3-signed.msi
+custom, next, next
+brings up Compass version 1.28.4
+typing mongo gets "not recognized command" error
+restarting
+still can't find mongo
+official guide: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows
+"The MongoDB Shell (mongosh) is not installed with MongoDB Server."
+https://docs.mongodb.com/mongodb-shell/install/
+installing from: https://www.mongodb.com/try/download/shell?jmp=docs
+version 1.1.1
+installed
+in c:\edward the command mongosh works (path already set up, found in user environment variables: c:\Users\oweir\AppData\Local\Programs\mongosh\)
+
+fixing mongorc.js problem
+in file explorer, go to %UserProfile%
+copied .mongorc.js (which was empty) to .mongoshrc.js
+error gone
+fixing error "Access control is not enabled..."
+will do this later, has to do with user access but access is now open for dev environment
+get mongo to work as well
+in c:\edward the command mongo is still unrecognized
+going to c:\Program Files\MongoDB\Server\5.0\bin then mongo works:
+
+setting environment path
+WINDOWS KEY, 'path'
+add system variables path:
+
+works now in c:\edward
+%% both mongo server and client (5.0.3) and mongosh (1.1.1) are installed
+Ubuntu virtual machine without Mongo installed yet
+full instructions here: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
+prepare installation
+wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
+says: "OK"
+sudo apt-get install gnupg
+had to run this first: sudo dpkg --configure -a
+took about 3 minutes
+then had to do sudo apt --fix-broken install
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
+not sure this is necessary
+sudo apt-get update
+install MongoDB
+sudo apt-get install -y mongodb-org
+start MongoDB
+sudo systemctl start mongod
+sudo systemctl status mongod
+mongo
+Ubuntu machine with Mongo shell/server v4.0.25
+first remove MongoDB 4.0
+full instructions here: https://stackoverflow.com/questions/29554521/uninstall-mongodb-from-ubuntu
+sudo service mongod stop
+sudo apt-get purge mongodb-org*
+sudo rm -r /var/log/mongodb
+sudo rm -r /var/lib/mongodb
+prepare installation
+wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
+says: "OK"
+sudo apt-get install gnupg
+had to run this first: sudo dpkg --configure -a
+took about 3 minutes
+then had to do sudo apt --fix-broken install
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
+not sure this is necessary
+sudo apt-get update
+install MongoDB
+sudo apt-get install -y mongodb-org
+start MongoDB
+sudo systemctl start mongod
+sudo systemctl status mongod
+mongo
+OneSpace created and maintained by Edward Tanguay
