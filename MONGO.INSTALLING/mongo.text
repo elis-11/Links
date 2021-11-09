@@ -32,7 +32,9 @@ db.notes.find()
 db.notes.insertOne({question: 'this is a question', answer: 'this is an answer'})
 db.flashcards.insertOne({question: 'this is a question', answer: 'this is an answer'})
 db.notes.find()
+
 exit
+
 db.flashcards.insertOne({question: ' ___________ refers to the process by which data is combined to form a single meaningful entity, e.g. average, sum, count, maximum and minimum. Both SQL and NoSQL support this.', answer: ' Aggregation refers to the process by which data is combined to form a single meaningful entity, e.g. average, sum, count, maximum and minimum. Both SQL and NoSQL support this.'})
 db.flashcards.insertOne({question: ' ______ databases are better for multi-row transactions, whereas ______ databases are better for unstructured data like documents or JSON. (Multi-row transactions are where many rows/records of data either all change or none of them change.)', answer: ' SQL databases use structured query language and have a predefined schema. NoSQL databases have dynamic schemas for unstructured data.'})
 db.flashcards.insertOne({question: ' Why did MongoDB create BSON?', answer: ' MongoDB created Binary JSON format (BSON) to increase efficiency and support more data types. With BSON data can be searched and indexed with greater performance.'})
