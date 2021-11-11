@@ -1,10 +1,10 @@
-## Import a Northwind JSON file into MongoDB via the shell
+# Import a Northwind JSON file into MongoDB via the shell
 
-# Link to expanation
+## Link to expanation
 https://onespace.netlify.app/howtos?id=429
 
-# Link to the northwind
+## Link to the northwind
 https://github.com/raynaldmo/northwind-mongodb/tree/master/collections/json
 
-# raw
+## raw
 https://raw.githubusercontent.com/raynaldmo/northwind-mongodb/master/collections/json/products.json
