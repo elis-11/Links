@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <script>
+      ////////FUNCTION DECLARATION////////
+      greet("Lena");
+
+      function greet(name) {
+        console.log("Hello - ", name);
+      }
+      greet("Lena");
+      console.log(greet);
+      console.log(typeof greet);
+      ////////////////////2///FUNCTION EXPRESSION////////////////////    F2=F3
+      const greet2 = function (name) {
+        console.log("Hello2 - ", name);
+      };
+      greet2("Lena");
+      console.log(greet2);
+      console.log(typeof greet2);
+
+      ////////////////////3/////////////////////////
+      const greet3 = function greet3(name) {
+        console.log("Hello3 - ", name);
+      };
+      greet3("Lena");
+      console.log(greet3);
+      console.log(typeof greet3);
+      console.dir(greet);
+
+      ////////ANONIME FUNCTION/////////
+      // let counter = 0;
+      // setInterval(function () {
+      //   console.log(++counter);  //WITHOUT STOP
+      // }, 3000);
+
+      let counter = 0;
+      const interval = setInterval(function () {
+        //setTimeout
+        if (counter === 3) {
+          clearInterval(interval); //clearTimeout
+        } else {
+          console.log(++counter); //WITHOUT STOP
+        }
+      }, 1000);
+
+      const name = "Liss";
+      console.log(name);
+      console.log(name.length);
+
+      const names = new Array("alina", "bert", "conni");
+      console.log(names);
+
+      const cars = ["BMW", "MERS", "VW", "Fiat"];
+      console.log(cars);
+      console.log(cars.length);
+      console.log(cars[1]);
+      cars[0] = "Porshe";
+      cars[1] = "Lada";
+      cars[3] = "UAS";
+      console.log(cars);
+      cars[cars.length] = "Mazda";
+      console.log(cars);
+
+      for (let i = 0; i < cars.length; i++) {
+        const car = cars[i];
+        console.log(car);
+        // console.log(i);
+      }
+      //          || oder
+
+      for (let car of cars) {
+        console.log(car);
+      }
+    </script>
+  </body>
+</html>

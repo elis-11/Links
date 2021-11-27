@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STRINGS</title>
+  </head>
+  <body>
+    <h1>hello</h1>
+    <script>
+      //STRING 1
+      function logPerson(name, age, address) {
+        console.log(name, age, address);
+        return "info about person";
+      }
+      const personName = "liss";
+      const personAge = 20;
+      const personAddress = "Hamburg";
+
+      const output =logPerson `Hi, I'm ${personName} and I'm ${personAge}, I live in ${personAddress}.`;
+      console.log(output);
+
+      //STRING 2
+      function pers1(s, name1, age1) {
+        if (age1 < 0) {
+          age1 = "not born.";
+        }
+        return `${s[0]} ${name1}${s[1]} ${age1}${s[2]}`;
+      }
+      const name1 = "Tom";
+      const age1 = -9;
+
+      const output1 = pers1`Hi, I'm ${name1} and I'm ${age1}.`;
+      console.log(output1);
+    </script>
+  </body>
+</html>

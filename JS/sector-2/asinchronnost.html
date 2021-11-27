@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asinchronnost</title>
+  </head>
+  <body>
+    <script>
+      // EVENT LOOP
+      const timeout = setTimeout(() => {
+        console.log("After Timeout");
+      }, 2500);
+      clearTimeout(timeout);
+      /////////////////////////
+      const interval = setInterval(() => {
+        console.log("After interval");
+      }, 1000);
+      clearInterval(interval);
+      /////////////////////////
+      const delay1 = (callback, wait = 1000) => {
+        setTimeout(callback, wait);
+      };
+      delay1(() => {
+        console.log("after 1 second");
+      }, 1000);
+      ///////////////////
+      ////-Promises
+      const delay = (wait = 1000) => {
+        const promise = new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve();
+            // reject("Something is filed! Try again later!");
+          }, wait);
+        });
+        return promise;
+      };
+      delay(2500)
+        .then(() => {
+          console.log("after 2 seconds");
+        })
+        .catch((err) => console.error(err)) //resolve
+        // .catch((err) => console.error("Error:", err)) //reject
+        .finally(() => console.log("Finaly"));
+      ///////////////////
+      const getData = () =>
+        new Promise((resolve) => resolve([1, 3, 5, 7, 9, 13]));
+      getData().then((data) => console.log(data));
+
+      console.clear();
+      ////-Promise--2
+      const delay2 = (wait = 1000) => {
+        const promise = new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve();
+          }, wait);
+        });
+        return promise;
+      };
+      const getData2 = () =>
+        new Promise((resolve) => resolve([1, 3, 5, 7, 9, 13]));
+      // getData2().then((data) => console.log(data));
+
+      async function asyngExample() {
+        try {          //try{}catch(e) {}
+          await delay2(3000);
+          const data = await getData2();
+          console.log("Data", data);
+        } catch (e) {
+            console.log(e);
+        } finally {
+            console.log('Finally');
+        }
+      }
+      asyngExample()
+    </script>
+  </body>
+</html>

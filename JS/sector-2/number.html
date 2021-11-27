@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NUMBERS</title>
+  </head>
+  <body>
+    <h1>hello</h1>
+    <script>
+      const fName = "liss";
+      const lName = "wiss";
+
+      function calcAge(year) {
+        return 2020 - year;
+      }
+      console.log(calcAge(1999));
+      console.log(calcAge(199));
+      console.log(calcAge(1965));
+
+      function infoAbout(name, year) {
+        const age = calcAge(year);
+        if (age > 0) {
+          console.log("Its " + name + " has " + age);
+        } else {
+          console.log("its future");
+        }
+      }
+      infoAbout("kok", 1945);
+      infoAbout("muk", 2015);
+      infoAbout("muk", 2022);
+
+      ////////////////////////
+      console.log(Math.ceil(4.1));
+      console.log(Math.floor(4.9));
+      console.log(Math.round(4.5));
+      console.log(Math.trunc(4.9));
+      console.log(Math.random());
+
+      function randomBetween(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      }
+      console.log(randomBetween(10, 42));
+
+      ////////////////////
+
+      const name1 = "Laila";
+      const age1 = 30;
+
+      function getAge1() {
+        return age1;
+      }
+      // const output=`Hi, I'm ${name1} and I'm ${age1} year old.`   vers-1
+      //   const output = `Hi, I'm ${name1} and I'm ${getAge1()} year old.`;   vers-2
+      const output = `Hi, I'm ${name1} and I'm ${
+        age1 > 20 ? "A" : "B"
+      } year old.`; // version-3
+      console.log(output);
+
+      const output1 = `
+        <div>Tralala</div>
+        <p>Trulala</p>
+        `;
+      console.log(output1);
+
+      ////////////////////////////////////////////////////
+      const name3 = "Lailuska";
+      console.log(name3);
+      console.log(name3.length);
+      console.log(name3.toUpperCase());
+      console.log(name3.toLowerCase());
+      console.log(name3.charAt(4));
+      console.log(name3.indexOf("us"));
+      console.log(name3.indexOf("e"));
+      console.log(name3.startsWith("lai"));
+      console.log(name3.toLowerCase().startsWith("lai"));
+      console.log(name3.startsWith("Lai"));
+      console.log(name3.endsWith("ska"));
+      console.log(name3.endsWith("ska."));
+      console.log(name3.repeat(3));
+      const string = "   password     ";
+      console.log(string.trim());
+      console.log(string.trimLeft());
+      console.log(string.trimRight());
+
+      ///////////function/////////////////
+
+      function logPerson(s, name, age) {
+        if (age < 0) {
+          age = "is not born";
+        }
+        // return "info about person";
+        return `${s[0]}${name}${s[1]}${age}${s[2]} `;
+      }
+      const personName = "laila";
+      const personAge = 28;
+      const personName2 = "Iso";
+      const personAge2 = -2;
+      const output = logPerson`Name: ${personName}, age: ${personAge}!`;
+      const output2 = logPerson`Name: ${personName2}, age: ${personAge2}!`;
+      console.log(output);
+      console.log(output2);
+
+     
+    </script>
+  </body>
+</html>

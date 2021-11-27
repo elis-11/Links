@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARRAYS</title>
+  </head>
+  <body>
+    <h1>hello</h1>
+    <script>
+      const cars = ["BMW", "Hw", "Ford", "Reno"];
+
+      console.log(cars.includes("mers"));
+      console.log(cars.includes("HW"));
+
+      const upperCaseCars = cars.map((car) => car.toUpperCase());
+      console.log(upperCaseCars);
+
+      // MAP
+      const fib = [1, 2, 3, 4, 5, 11, 13];
+      // const pow2fib= fib.map(num=>num**2)
+      //----------------------------------------------------------------
+      // const pow2 = (num) => num ** 2;
+      // const pow2fib = fib.map(pow2);
+      //----------------------------------------------------------------
+      // const pow2 = (num) => num ** 2;
+      // const sqrt=num=>Math.sqrt(num)
+      // const pow2fib = fib.map(pow2).map(sqrt);
+
+      // const pow2fib = fib.map(pow2).map(Math.sqrt);
+
+      const pow2 = (num) => num ** 2;
+      const pow2fib = fib.map(pow2);
+      const filteredNunbers = pow2fib.filter((num) => {
+        return num > 4;
+      });
+
+      console.log(pow2fib);
+      
+      console.log(filteredNunbers);
+
+ x = 10;
+console.log(x);
+{
+   x=5
+  console.log(x);
+}
+{ x=7
+  console.log(x);
+}
+console.log(x);
+
+      // FUNCTION
+      // function addItemToEnd {
+      // }
+
+      // METHODE
+      cars.push("Porshe");
+      cars.unshift("Lada");
+      console.log(cars);
+      cars.shift();
+      console.log(cars);
+      const firstItem = cars.shift();
+      console.log(firstItem);
+      console.log(cars);
+      cars.pop();
+      console.log(cars);
+      console.log(cars.reverse());
+      console.log(cars);
+      // console.log(cars.indexOf('FORD'));
+
+      // const index=cars.indexOf('HW');
+      // cars[index]='Porshe'
+      // console.log(cars);
+
+      // task 1
+      const text = "Hello, we are learning JS!";
+      console.log(text);
+
+      //   const reverseText = text.split(",");
+      //   console.log(reverseText);
+      //   const reverseText = text.split("");
+      //   console.log(reverseText);
+      //   const reverseText = text.split("").reverse();
+      //   console.log(reverseText);
+      const reverseText = text.split("").reverse().join();
+      //   const reverseText = text.split("").reverse().join('');
+      //   const reverseText = text.split("").reverse().join(' ');
+      console.log(reverseText);
+
+      //  OBJECTS
+      const people = [
+        { name: "John", budget: 4200 },
+        { name: "Vika", budget: 6000 },
+        { name: "Leon", budget: 8000 },
+      ];
+      //   const index = people.findIndex(function (person) {
+      //     console.log(person);
+      //     return person.budget === 8000;
+      //   });
+      //   console.log(index);
+      //   console.log(people[index]);
+
+      //  oder  ||
+      //   const person = people.find(function (person) {
+      //     return person.budget === 4200;
+      //   })
+
+      // oder ||
+      //  const person = people.find((person)=> {
+      // console.log(people);
+      // console.log(person);
+      //     return person.budget === 4200;
+      //   })
+      //   oder ||
+      const person = people.find((person) => person.budget === 4200);
+      console.log(person);
+    </script>
+  </body>
+</html>
