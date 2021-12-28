@@ -1,5 +1,7 @@
 download the customer_orders.json file:
 wget -O customer_orders.json https://raw.githubusercontent.com/edwardtanguay/downloads/master/customer_orders.json
+---------------------------------
+https://onespace.netlify.app/howtos?id=431
 ----------------------------------------------
 
 mongoimport --db northwind --collection products --type json --file products.json --jsonArray
@@ -13,3 +15,5 @@ mongoimport --db northwind --collection customer_orders --type json --file custo
 mongoimport --db api001 --collection users100 --type json --file users100.json --jsonArray
 
 ---------doing-first-part--------
+
+    "start": "npx nodemon backend.js"
