@@ -2,7 +2,9 @@ download the customer_orders.json file:
 wget -O customer_orders.json https://raw.githubusercontent.com/edwardtanguay/downloads/master/customer_orders.json
 ---------------------------------
 https://onespace.netlify.app/howtos?id=431
-----------------------------------------------
+-------------------------------------
+MONGODB_URI=mongodb+srv://user1:elis@cluster0.gzwcn.mongodb.net/test
+-------------------------------
 
 mongoimport --db northwind --collection products --type json --file products.json --jsonArray
 
