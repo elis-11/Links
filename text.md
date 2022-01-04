@@ -22,3 +22,11 @@ mongoimport --db api001 --collection users100 --type json --file users100.json -
 ---------doing-first-part--------
 
     "start": "npx nodemon backend.js"
+    -------------------------
+
+--------front------------
+REACT_APP_BACKEND_URL=http://localhost:3016
+
+--------back-----------
+MONGODB_URI=mongodb://localhost:27017/
+ALLOVED_FRONTEND_URI=http://localhost:3000
