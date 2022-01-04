@@ -15,12 +15,34 @@ mongoimport --db northwind --collection full_orders --type json --file full_orde
 
 mongoimport --db northwind --collection customer_orders --type json --file customer_orders.json --jsonArray
 
+mongoimport --db api002 --collection users100 --type json --file users100.json --jsonArray
+
+mongoimport --db api002 --collection articles --type json --file articles.json --jsonArray
+
 
 ---------------that is-----------
 mongoimport --db api001 --collection users100 --type json --file users100.json --jsonArray
 
----------doing-first-part--------
+----------------------------------------------------------------------
 
+mongosh "mongodb+srv://cluster0.qqwpv.mongodb.net/myFirstDatabase" --username <username>
+mongosh "mongodb+srv://cluster0.qqwpv.mongodb.net/myFirstDatabase" --username main-user
+
+---------------------------------------------------------
+
+mongodb+srv://<username>:<password>@cluster0.qqwpv.mongodb.net/test
+mongodb+srv://guest-user:elis@cluster0.qqwpv.mongodb.net/test
+
+                   cluster0-shard-00-02.qqwpv.mongodb.net:27017
+mongoimport --host cluster0-shard-00-01.ogshn.mongodb.net:27017 --db blogapp --collection articles --type json --file articles.json --jsonArray --authenticationDatabase admin --ssl --username mainuser
+mongoimport --host cluster0-shard-00-02.qqwpv.mongodb.net:27017 --db blogapp --collection articles --type json --file articles.json --jsonArray --authenticationDatabase admin --ssl --username guest-user
+
+                   cluster0-shard-00-02.qqwpv.mongodb.net:27017
+mongoimport --host cluster0-shard-00-01.ogshn.mongodb.net:27017 --db api001 --collection users100 --type json --file users100.json --jsonArray --authenticationDatabase admin --ssl --username mainuser
+mongoimport --host cluster0-shard-00-02.qqwpv.mongodb.net:27017 --db api001 --collection users100 --type json --file users100.json --jsonArray --authenticationDatabase admin --ssl --username guest-user
+
+
+--------------------------------------
     "start": "npx nodemon backend.js"
     -------------------------
 
