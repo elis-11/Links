@@ -57,3 +57,7 @@ ALLOVED_FRONTEND_URI=http://localhost:3000
 -------new--------
 MONGODB_URI=mongodb+srv://elis:elis@cluster0.ldv56.mongodb.net/first-mern?retryWrites=true&w=majority
 ALLOVED_FRONTEND_URI=http://localhost:3000
+
+## https://first-mern-bck.herokuapp.com/
+
+## https://drive.google.com/file/d/1Ql_CWa5ffr_gRjTQhnB0vJ0bWuRPsAuw/edit
