@@ -49,6 +49,11 @@ mongoimport --host cluster0-shard-00-02.qqwpv.mongodb.net:27017 --db api001 --co
 --------front------------
 REACT_APP_BACKEND_URL=http://localhost:3016
 
+
 --------back-----------
 MONGODB_URI=mongodb://localhost:27017/
+ALLOVED_FRONTEND_URI=http://localhost:3000
+
+-------new--------
+MONGODB_URI=mongodb+srv://elis:elis@cluster0.ldv56.mongodb.net/first-mern?retryWrites=true&w=majority
 ALLOVED_FRONTEND_URI=http://localhost:3000
