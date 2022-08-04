@@ -12,17 +12,34 @@ dotenv.config(); // parse .env file and store it in object process.env
 const app = express();
 
 app.use(express.json());
-mongoose.connect(process.env.MONGO_URI);
+// mongoose.connect(process.env.MONGO_URI);
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => console.log(`MongoDB Connected!!!`))
+.catch((err) => console.log(`Error: ${err.message}`));
 
+app.set("trust proxy", 1);
 
-app.use(cors({ origin: process.env.FRONTEND_ORIGIN })); // allow accessing our API from the ANY other domain!
+// app.use(cors({ origin: process.env.FRONTEND_ORIGIN })); // allow accessing our API from the ANY other domain!
 // app.use(cors({ origin: process.env.FRONTEND_ORIGIN || "http://localhost:3000" })) // allow accessing our API from the ANY other domain!
 // app.use(
 //   cors({
-//     origin: process.env.ORIGIN_URL || "http://localhost:3000",
+//     origin: process.env.FRONTEND_ORIGIN || "http://localhost:3000",
 //     credentials: true, // accept incoming cookies
 //   })
 // );
+app.use(
+  cors({
+    origin:
+      process.env.NODE_ENV !== "production"
+        ? process.env.FRONTEND_ORIGIN
+        : process.env.FRONTEND_ORIGIN_HTTPS,
+    credentials: true, // accept incoming cookies
+  })
+);
+
 
 //HOME ROUTE
 app.get("/", (req, res) => {
