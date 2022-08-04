@@ -5,7 +5,7 @@ GET {{url}}/users
 Content-Type: application/json
 
 ### get single
-GET {{url}}/users/6273d59bfe9a75d14804801a
+GET {{url}}/users/62778d43abaaaec773828ffa
 Content-Type: application/json
 
 ### create
@@ -21,35 +21,35 @@ Content-Type: application/json
 }
 
 ### delete
-DELETE {{url}}/users/62779187fbe78b275ef54fd3
+DELETE {{url}}/users/62ebd2c961f4f13795e6e854
 Content-Type: application/json
 
 ### edit
-PATCH {{url}}/users/62778dceabaaaec773829004
+PATCH {{url}}/users/62ebd2aa61f4f13795e6e845
 Content-Type: application/json
 
 {
-    "name": "Amar",
-    "email": "amar@gmail.com"
+    "name": "Luis",
+    "email": "luis@gmail.com"
 }
 
 ### edit
-PATCH {{url}}/users/62778dceabaaaec773829004
+PATCH {{url}}/users/62ebd2a561f4f13795e6e841
 Content-Type: application/json
 
 {
-    "name": "Amar",
-    "email": "amar@gmail.com",
+    "name": "Leon",
+    "email": "leon@gmail.com",
     "profession": "Trainer"
 }
 
 ### edit
-PATCH {{url}}/users/62778dcfabaaaec773829006
+PATCH {{url}}/users/62ebd2a861f4f13795e6e843
 Content-Type: application/json
 
 {
-    "name": "Ed",
-    "email": "ed@gmail.com",
+    "name": "Edword",
+    "email": "edword@gmail.com",
     "profession": "Trainer",
-    "city": "New York"
+    "city": "Hamburg"
 }

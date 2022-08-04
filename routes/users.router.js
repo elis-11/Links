@@ -14,6 +14,7 @@ usersRouter.get("/", async(req, res) => {
 usersRouter.get("/:id", async (req, res) => {
   const userId = req.params.id;
 const user = await UserModel.findById(userId);
+// const user = await UserModel.findById(req.params.id);
   res.json(user);
 });
 

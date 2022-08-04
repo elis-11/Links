@@ -31,7 +31,7 @@ teachersRouter.post("/", async (req, res) => {
   res.json(teacherNew);
 });
 
-// PATCH /teachers/id
+// PATCH / UPDATE /teachers/id
 teachersRouter.patch("/:id", async (req, res) => {
   const teacherId = req.params.id; // ID of teacher
   const dataUpdate = req.body; // data to UPDATE on teacher

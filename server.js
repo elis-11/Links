@@ -32,6 +32,8 @@ app.get("/", (req, res) => {
   <a href="/teachers">Teachers</a> |
   <a href="/students">Students</a> |
   <a href="/todos">Todos</a> 
+<div> Frontend URL: <a href="${process.env.FRONTEND_ORIGIN}"> ${process.env.FRONTEND_ORIGIN}</a></div>
+
     `);
 });
 
