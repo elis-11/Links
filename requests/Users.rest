@@ -14,23 +14,22 @@ Content-Type: application/json
 
 {
     "name": "Peter",
-    "profession": "PR Consultant",
     "hobby": "reading",
     "email": "julian@gmail.com",
     "city": "Bremen"
 }
 
 ### delete
-DELETE {{url}}/users/62ebd2c961f4f13795e6e854
+DELETE {{url}}/users/62ebd2a861f4f13795e6e843
 Content-Type: application/json
 
 ### edit
-PATCH {{url}}/users/62ebd2aa61f4f13795e6e845
+PATCH {{url}}/users/62ebd2a861f4f13795e6e843
 Content-Type: application/json
 
 {
-    "name": "Luis",
-    "email": "luis@gmail.com"
+    "name": "Anne",
+    "email": "anne@gmail.com"
 }
 
 ### edit
@@ -40,7 +39,6 @@ Content-Type: application/json
 {
     "name": "Leon",
     "email": "leon@gmail.com",
-    "profession": "Trainer"
 }
 
 ### edit
@@ -48,8 +46,6 @@ PATCH {{url}}/users/62ebd2a861f4f13795e6e843
 Content-Type: application/json
 
 {
-    "name": "Edword",
-    "email": "edword@gmail.com",
-    "profession": "Trainer",
-    "city": "Hamburg"
+    "name": "Edward",
+    "email": "edward@gmail.com",
 }
